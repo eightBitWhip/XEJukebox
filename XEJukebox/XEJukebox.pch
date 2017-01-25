@@ -1,0 +1,23 @@
+//
+//  XEJukebox.pch
+//  XEJukebox
+//
+//  Created by Freddie Parks on 14/12/2015.
+//  Copyright © 2015 Freddie. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifdef __cplusplus
+#include "baseapi.h"
+#endif
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Style.h"
+#endif
